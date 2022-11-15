@@ -80,6 +80,8 @@
     font-family: Inter-light;
     font-size: 14px;
     padding-top: 10px;
+    max-height: 98px;
+    overflow-y: scroll;
 }
 
 .price{
@@ -97,6 +99,10 @@
     transition: background-color 0.3s;
     color: white;
     margin-top: 10px;
+}
+
+.remove_btn:hover{
+    background-color: rgb(52, 107, 133);
 }
 
 

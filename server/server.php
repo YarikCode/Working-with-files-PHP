@@ -13,6 +13,13 @@ $db_file = "ads.txt";
 $file_arr = file($db_file);
 $lines = count($file_arr);
 
+foreach($file_arr as $key => $value){
+    $ad = explode("/!/", $file_arr[$key]);
+    if($lines == $ad[0]){
+        $lines++;
+    }
+}
+
 if($ad_file != null){
     copy($ad_file['tmp_name'], './images/' . $lines . '_' . $ad_file['name']);
 }

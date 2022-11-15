@@ -11,10 +11,7 @@ function getAds(){
     XML.addEventListener('load', () => {
         if(XML.status == 200){
             adsContainer.innerHTML += XML.response;
+            console.log("XML: " + XML.response);
         }
     });
-}
-
-function removeAd() {
-    
 }
