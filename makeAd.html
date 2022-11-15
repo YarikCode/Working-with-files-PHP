@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление обьявления</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_title">Объявления</h1>
+        <a href="./index.html">
+            <button class="header_button">Вернуться</button>
+        </a>
+    </header>
+
+    <div class="form_containter">
+        <form action="./server/server.php" class="add_form" method="post" enctype="multipart/form-data">
+            <h1 class="add_from_title">Добавление объявления</h1>
+            <div>
+                <p class="input_title">Название</p>
+                <input type="text" class="input" name="ad_name" required>
+            </div>
+            <div>
+                <p class="input_title">Описание</p>
+                <textarea class="input" name="ad_description" rows="10" required></textarea>
+            </div>
+            <div>
+                <p class="input_title">Цена</p>
+                <input type="text" class="input" name="ad_price" required>
+            </div>
+            <div class="file_div">
+                <input type="file" id="file_input" name="ad_file" required>
+                <label for="file_input" class="chose_btn">Выбрать фотографию</label>
+            </div>
+            <button type="submit" class="submit_btn">Опубликовать</button>
+        </form>
+    </div>
+</body>
+</html>
